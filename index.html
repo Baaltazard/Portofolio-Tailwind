@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="img/png" href="src/baltazard.png" />
+    <title>Baltazard Portofolio</title>
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 pt-4">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold texy-lg text-nude block">Baltazard</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full pt-4 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-slate-900 dark:shadow-slate-500 lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="text-base text-slate-900 py-2 mx-8 group-hover:text-nude dark:text-white">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="text-base text-slate-900 py-2 mx-8 group-hover:text-nude dark:text-white">About me</a>
+                </li>
+                <li class="group">
+                  <a href="#portofolio" class="text-base text-slate-900 py-2 mx-8 group-hover:text-nude dark:text-white">Portofolio</a>
+                </li>
+                <li class="group">
+                  <a href="#contact" class="text-base text-slate-900 py-2 mx-8 group-hover:text-nude dark:text-white">Contact</a>
+                </li>
+                <li class="flex items-center pl-8">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--End Header start -->
+    <!-- Hero Section -->
+    <section id="home" class="pt-36 dark:bg-slate-900">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-nude md:text-xl lg:text-2xl hover:animate-pulse">
+              Hello 🖐🏻, My Name <span class="block font-bold text-slate-700 text-4xl mt-1 lg:text-5xl dark:text-white hover:rotate-2">Baltazard</span>
+            </h1>
+            <h2 class="font-medium text-slate-500 text-lg mb-4">Web Programing</h2>
+            <p class="font-medium text-slate-400 mb-10 leading-relaxed">Process of creating program programmers who create, design, and maintain web sites or applications. Web developers use various technologies, programming languages,</p>
+            <a href="#" class="text-base font-semibold text-white bg-nude py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact me</a>
+            <br />
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-9 lg:right-0">
+              <img src="src/yog.png" alt="Badltazard" class="relative z-10 max-w-full mx-auto" />
+              <span class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+                <svg width="250" height="250" class="animate-bounce" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#059669"
+                    d="M66.2,-23.4C74.8,4.9,63.2,38,39.9,54.9C16.6,71.8,-18.4,72.6,-42.1,55.9C-65.8,39.2,-78.2,4.9,-69.3,-23.9C-60.4,-52.6,-30.2,-75.8,-0.7,-75.6C28.8,-75.4,57.6,-51.7,66.2,-23.4Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- about section -->
+    <section id="about" class="pt-36 pb-32 dark:bg-slate-900">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-nude text-lg mb-3">About me</h4>
+            <h2 class="font-bold text-slate-900 text-3xl mb-5 max-w-xl dark:text-white">I design and code beautifull simple things, and ilove what i do.</h2>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="font-bold text-3xl">let's be friends</h3>
+            <p class="font-medium text-base text-slate-500 dark:text-slate-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam amet voluptatem est minima modi, asperiores aliquam. Harum, temporibus!</p>
+            <div class="flex items-center">
+              <a href="https://www.youtube.com/@anggaadi89" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-nude hover:bg-nude hover:text-white text-slate-300">
+                <svg role="img" width="20" class="fill-gray-300" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <a href="https://github.com/Baaltazard" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-nude hover:bg-nude hover:text-white text-slate-300">
+                <svg role="img" width="20" class="fill-gray-300" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End about section -->
+    <!-- Portofolio -->
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-nude">portofolio</h4>
+            <h2 class="font-bold text-slate-900 text-3xl mb-4">New Project</h2>
+            <p class="font-medium text-md text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique atque dolor ab sint, molestias assumenda consequuntur.</p>
+          </div>
+        </div>
+
+        <div class="w-full px-4 flex flex-warp justify-center">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="src/project1.png" alt="project1" width="w-full" />
+            </div>
+            <h3 class="font-semibold mt-5 mb-3">Baltazard patient data</h3>
+            <p class="font-medium text-base text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque voluptate nihil, nam magni alias laudantium quod impedit consequatur nisi ab officiis voluptas ea minus aliquid aliquam velit quas eum!
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="src/project2.png" alt="project1" width="w-full" />
+            </div>
+            <h3 class="font-semibold mt-5 mb-3">Baltazard transaction reports</h3>
+            <p class="font-medium text-base text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque voluptate nihil, nam magni alias laudantium quod impedit consequatur nisi ab officiis voluptas ea minus aliquid aliquam velit quas eum!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Portofolio -->
+    <!-- contact -->
+    <section id="contact" class="pt-36 pb-32 dark:bg-slate-900">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-nude">Contact</h4>
+            <h2 class="font-bold text-slate-900 text-3xl mb-4">Contact me</h2>
+            <p class="font-medium text-md text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique atque dolor ab sint, molestias assumenda consequuntur.</p>
+          </div>
+        </div>
+        <div role="alert" class="w-full lg:w-2/3 pb-2 lg:mx-auto my-alert hidden">
+          <div class="bg-nude text-white font-bold rounded-t px-4 py-2">Success</div>
+          <div class="border border-t-0 border-nude rounded-b bg-red-100 px-4 py-3 text-red-700">
+            <p>Thank you, we have accepted your suggestion</p>
+          </div>
+        </div>
+        <form name="myform" class="myform">
+          <input type="hidden" name="timestime" value="" />
+          <div class="w-full lg:w-2/3 lg:mx-auto">
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base font-bold text-nude">Nama</label>
+              <input type="text" id="name" name="nama" class="w-full bg-slate-200 text-slate-950 p-3 rounded-md focus:outline-none focus:ring-nude focus:ring-1 focus:border-nude" required />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="email" class="text-base font-bold text-nude">Email</label>
+              <input type="email" id="email" name="email" class="w-full bg-slate-200 text-slate-950 p-3 rounded-md focus:outline-none focus:ring-nude focus:ring-1 focus:border-nude" required />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="message" class="text-base font-bold text-nude">Message</label>
+              <textarea type="text" id="message" name="pesan" class="w-full bg-slate-200 text-slate-950 p-3 rounded-md focus:outline-none focus:ring-nude focus:ring-1 focus:border-nude" required></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button type="submit" class="text-base font-semibold text-white bg-nude py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 btn-kirim">Kirim</button>
+              <button type="button" class="text-base font-semibold text-white bg-smooth py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 btn-loading hidden" disable>
+                <svg width="24" height="24" class="fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <circle cx="12" cy="2.5" r="1.5" opacity=".14" />
+                    <circle cx="16.75" cy="3.77" r="1.5" opacity=".29" />
+                    <circle cx="20.23" cy="7.25" r="1.5" opacity=".43" />
+                    <circle cx="21.50" cy="12.00" r="1.5" opacity=".57" />
+                    <circle cx="20.23" cy="16.75" r="1.5" opacity=".71" />
+                    <circle cx="16.75" cy="20.23" r="1.5" opacity=".86" />
+                    <circle cx="12" cy="21.5" r="1.5" />
+                    <animateTransform
+                      attributeName="transform"
+                      type="rotate"
+                      calcMode="discrete"
+                      dur="0.75s"
+                      values="0 12 12;30 12 12;60 12 12;90 12 12;120 12 12;150 12 12;180 12 12;210 12 12;240 12 12;270 12 12;300 12 12;330 12 12;360 12 12"
+                      repeatCount="indefinite"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- end contact -->
+    <!-- footer -->
+    <footer class="bg-slate-800 pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h2 class="font-bold text-4xl text-white mb-5">Baltazard</h2>
+            <h3 class="font-bold text-2xl mb-2" m>Call me</h3>
+            <p>Baaltazard89@gmail.com</p>
+            <p>Jawa Timur</p>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#" class="inline-block text-base hover:text-nude mb-3">Programing</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block text-base hover:text-nude mb-3">Teknologi</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#home" class="inline-block text-base hover:text-nude mb-3">Beranda</a>
+              </li>
+              <li>
+                <a href="#about" class="inline-block text-base hover:text-nude mb-3">About me</a>
+              </li>
+              <li>
+                <a href="#portofolio" class="inline-block text-base hover:text-nude mb-3">Project</a>
+              </li>
+              <li>
+                <a href="#contact" class="inline-block text-base hover:text-nude mb-3">Contact me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw5QTQc1fwFIcpWnpmlPqM682452uu4JbF8_iQTgjmmTvnV541L17NM7aJ1rZR8fH5N9w/exec';
+      const form = document.forms['myform'];
+      const btnkirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+      const ContactForm = document.querySelector('.myform');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        //ketika tombol submit di tekan
+        //tampilkan spiner
+        btnLoading.classList.toggle('hidden');
+        btnkirim.classList.toggle('hidden');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            btnLoading.classList.toggle('hidden');
+            btnkirim.classList.toggle('hidden');
+            myAlert.classList.toggle('hidden');
+            ContactForm.classList.toggle('hidden');
+            form.reset();
+            console.log('Success!', response);
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+    <script src="src/script.js"></script>
+  </body>
+</html>
